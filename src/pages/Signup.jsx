@@ -4,14 +4,12 @@ import "./Signup.css";
 import API from "../services/api";
 
 const Signup = () => {
-
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    password: "",
-    role: "STUDENT"
+    password: ""
   });
 
   const handleChange = (e) => {
@@ -22,42 +20,29 @@ const Signup = () => {
   };
 
   const handleSubmit = async (e) => {
-
     e.preventDefault();
 
     try {
-
-      const response = await API.post(
+      await API.post(
         "/auth/signup",
         formData
       );
 
       alert("Registration Successful");
-
       navigate("/login");
-
     } catch (error) {
-
       console.log(error);
-
-      alert("Registration Failed");
-
+      alert(error.response?.data?.message || "Registration Failed");
     }
-
   };
 
   return (
-
     <div className="signup-container">
-
       <div className="signup-card">
-
         <h1>Create Account</h1>
-
         <p>Join our E-Learning Platform</p>
 
         <form onSubmit={handleSubmit}>
-
           <input
             type="text"
             name="name"
@@ -85,37 +70,20 @@ const Signup = () => {
             required
           />
 
-          <select
-            name="role"
-            value={formData.role}
-            onChange={handleChange}
-          >
-            <option value="STUDENT">Student</option>
-            <option value="ADMIN">Admin</option>
-          </select>
-
           <button type="submit">
             Register
           </button>
-
         </form>
 
         <div className="login-link">
-
           Already have an account?
-
           <span onClick={() => navigate("/login")}>
             Login
           </span>
-
         </div>
-
       </div>
-
     </div>
-
   );
-
 };
 
 export default Signup;
