@@ -1,0 +1,252 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+.course-page{
+
+    min-height:100vh;
+
+    padding:50px 30px;
+
+    background:#f8fafc;
+
+}
+
+
+
+.course-page h1{
+
+    text-align:center;
+
+    font-size:38px;
+
+    margin-bottom:40px;
+
+    color:#1e3a8a;
+
+}
+
+
+
+/* Course Container */
+
+.course-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+
+}
+
+
+
+/* Course Card */
+
+
+.course-card{
+
+
+    width:350px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,0.1);
+
+
+    transition:0.3s;
+
+
+}
+
+
+
+.course-card:hover{
+
+
+    transform:translateY(-8px);
+
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,0.2);
+
+
+}
+
+
+
+
+.course-card h2{
+
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+
+
+    font-size:25px;
+
+
+}
+
+
+
+.course-card p{
+
+
+    color:#555;
+
+    line-height:1.6;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+/* Course Details */
+
+
+.course-info{
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+    margin-bottom:25px;
+
+    color:#374151;
+
+    font-size:15px;
+
+}
+
+
+
+/* Button */
+
+
+.course-card button{
+
+
+    width:100%;
+
+    padding:12px;
+
+
+    border:none;
+
+    border-radius:8px;
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #2563eb,
+        #7c3aed
+    );
+
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+
+    transition:0.3s;
+
+
+}
+
+
+
+.course-card button:hover{
+
+
+    transform:scale(1.03);
+
+
+}
+
+
+
+/* Loading */
+
+.loading{
+
+
+    text-align:center;
+
+    margin-top:100px;
+
+    color:#2563eb;
+
+}
+
+
+
+.error{
+
+
+    text-align:center;
+
+    margin-top:100px;
+
+    color:red;
+
+}
+
+
+
+/* Responsive */
+
+
+@media(max-width:768px){
+
+
+    .course-page{
+
+        padding:30px 15px;
+
+    }
+
+
+
+    .course-page h1{
+
+        font-size:30px;
+
+    }
+
+
+
+    .course-card{
+
+        width:100%;
+
+        max-width:400px;
+
+    }
+
+
+}

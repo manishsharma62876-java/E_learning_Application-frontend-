@@ -1,0 +1,253 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+.home{
+  width:100%;
+}
+
+/* Hero Section */
+
+.hero{
+
+  height:90vh;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  text-align:center;
+
+  background:
+  linear-gradient(
+    135deg,
+    #2563eb,
+    #7c3aed
+  );
+
+  color:white;
+
+  padding:20px;
+}
+
+.hero-content h1{
+
+  font-size:55px;
+
+  margin-bottom:20px;
+}
+
+.hero-content p{
+
+  font-size:20px;
+
+  margin-bottom:30px;
+}
+
+.explore-btn{
+
+  padding:14px 30px;
+
+  border:none;
+
+  border-radius:8px;
+
+  background:white;
+
+  color:#2563eb;
+
+  font-size:18px;
+
+  cursor:pointer;
+
+  font-weight:bold;
+
+  transition:0.3s;
+}
+
+.explore-btn:hover{
+
+  transform:translateY(-3px);
+
+  background:#f3f4f6;
+}
+
+
+/* Stats */
+
+.stats{
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:30px;
+
+  padding:60px 20px;
+
+  flex-wrap:wrap;
+}
+
+.stat-card{
+
+  width:250px;
+
+  text-align:center;
+
+  background:white;
+
+  padding:25px;
+
+  border-radius:15px;
+
+  box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.stat-card h2{
+
+  color:#2563eb;
+
+  margin-bottom:10px;
+}
+
+
+/* Courses */
+
+.courses{
+
+  padding:60px 20px;
+
+  background:#f8fafc;
+
+  text-align:center;
+}
+
+.courses h2{
+
+  margin-bottom:40px;
+
+  font-size:36px;
+}
+
+.course-container{
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:25px;
+
+  flex-wrap:wrap;
+}
+
+.course-card{
+
+  width:320px;
+
+  background:white;
+
+  padding:25px;
+
+  border-radius:15px;
+
+  box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+  transition:.3s;
+}
+
+.course-card:hover{
+
+  transform:translateY(-8px);
+}
+
+.course-card h3{
+
+  color:#2563eb;
+
+  margin-bottom:15px;
+}
+
+
+/* Why Us */
+
+.why-us{
+
+  padding:60px 20px;
+
+  text-align:center;
+}
+
+.why-us h2{
+
+  margin-bottom:40px;
+
+  font-size:36px;
+}
+
+.why-container{
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:25px;
+
+  flex-wrap:wrap;
+}
+
+.why-card{
+
+  width:300px;
+
+  padding:25px;
+
+  background:white;
+
+  border-radius:15px;
+
+  box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+
+/* Footer */
+
+.footer{
+
+  background:#111827;
+
+  color:white;
+
+  text-align:center;
+
+  padding:20px;
+}
+
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero-content h1{
+
+  font-size:35px;
+}
+
+.hero-content p{
+
+  font-size:16px;
+}
+
+.stats,
+.course-container,
+.why-container{
+
+  flex-direction:column;
+
+  align-items:center;
+}
+
+}
