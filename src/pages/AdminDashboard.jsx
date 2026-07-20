@@ -142,7 +142,7 @@ const AdminDashboard = () => {
         }, { headers });
         alert("Course updated successfully!");
       } else {
-        await API.post("/courses", {
+        await API.post("/courses/add", {
           title: formData.title,
           description: formData.description,
           category: formData.category,
