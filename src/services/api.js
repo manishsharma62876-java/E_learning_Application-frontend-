@@ -61,8 +61,8 @@ import StudentDashboard from "./pages/StudentDashboard";
 import AdminDashboard from "./pages/AdminDashboard";
 import DashboardRedirect from "./pages/DashboardRedirect";
 
-import ProtectedRoute from "./components/ProtectedRoute";
-import RoleBasedRoute from "./components/RoleBasedRoute";
+import ProtectedRoute from "./components/ProtectedRoute.jsx";
+import RoleBasedRoute from "./components/RoleBasedRoute.jsx";
 
 function App() {
   return (
